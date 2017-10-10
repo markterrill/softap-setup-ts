@@ -10,3 +10,11 @@ You can install ***softap-setup-ts*** using npm
   ```bash
   npm install softap-setup-ts --save
   ```
+
+### Typescript tsc for browser
+
+Run tsc from within the lib directory
+
+  ```cd lib; 
+  tsc
+  ```
