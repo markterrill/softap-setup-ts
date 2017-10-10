@@ -288,8 +288,14 @@ export class SoftAP {
         cbFormated = () => {};
       }
       indexFormated = 0;
+      is(cbFormated);
+
+    } else {
+      indexFormated = index;
+      is(cb);
+
     }
-    is(cb);
+
     this.__sendCommand({ name: 'connect-ap', body: { idx: indexFormated } }, function response(err, dat) {
       checkResponse(err, dat, cbFormated);
       cbFormated();
